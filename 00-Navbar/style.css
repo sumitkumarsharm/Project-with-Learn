@@ -1,0 +1,113 @@
+/* step -1  always*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #02162e;
+}
+
+/* Stpe-2 utility classes */
+li {
+    list-style: none;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* step-3 custom properties */
+#Main-Header-Container {
+    color: white;
+}
+
+Nav {
+    padding-inline: 30px;
+    background-color: #061f3e;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 10px;
+    font-family: sans-serif;
+}
+
+nav #Company-Logo {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+#Company-Logo h1 {
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(216, 90, 27);
+    cursor: pointer;
+}
+
+nav #Company-Logo p {
+    cursor: pointer;
+    font-size: 18px;
+}
+
+nav #Company-Logo p span {
+    color: #d85a1b;
+    text-transform: capitalize;
+}
+
+nav #Nav-links ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+nav #Nav-links ul li a {
+    font-size: 20px;
+    transition: all 0.2s ease-in-out;
+
+}
+
+
+nav #Nav-links ul li .indicat-active {
+    border-top: 3px solid #d85a1b;
+    margin-bottom: 9px;
+    color: #d85a1b;
+}
+
+nav #Nav-links ul li .inidicator-anchor-permanent {
+    color: #d85a1b;
+}
+
+nav #Nav-links ul li .indicator {
+    border-top: 3px solid transparent;
+    margin-bottom: 9px;
+    transition: all 0.2s ease-in-out;
+}
+
+nav #Nav-links ul li:hover .indicator {
+    border-top: 3px solid #d85a1b;
+}
+
+nav #Nav-links ul li .inidicator-anchor:hover {
+    color: #d85a1b;
+
+}
+
+/* pesudo Elements */
+/* #Company-Logo p span::before {
+    content: "1";
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    text-align: center;
+    margin-right: 8px;
+    font-size: 30px;
+    border: 2px solid transparent;
+    background-color: rgba(105, 102, 102, 0.381);
+    border-radius: 30px;
+    padding: 3px 4px;
+    transition: all 0.4s ease-in-out;
+} */
