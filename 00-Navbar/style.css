@@ -7,6 +7,7 @@
 
 body {
     background-color: #02162e;
+    color: white;
 }
 
 /* Stpe-2 utility classes */
@@ -25,6 +26,7 @@ a {
     color: white;
 }
 
+/* here i style nav element */
 Nav {
     padding-inline: 30px;
     background-color: #061f3e;
@@ -35,79 +37,166 @@ Nav {
     font-family: sans-serif;
 }
 
+/* here i style company logo */
 nav #Company-Logo {
     display: flex;
     align-items: center;
     gap: 60px;
 }
 
+/* here i style company logo heading*/
 #Company-Logo h1 {
     font-size: 40px;
     font-weight: 600;
     color: rgb(216, 90, 27);
+    transition: all 0.4s ease-in-out;
     cursor: pointer;
 }
 
+#Company-Logo h1:hover {
+    transform: scale(1.1);
+    /* transform: rotateX(180deg); */
+    /* transform: rotateY(180deg); */
+    /* transform: skew(180deg) */
+    /* transform:translate3d(10px, 10px, 10px); */
+}
+
+/* here i style company logo heading*/
 nav #Company-Logo p {
     cursor: pointer;
-    font-size: 18px;
+    font-size: 20px;
 }
 
+/* here i style company logo heading*/
 nav #Company-Logo p span {
     color: #d85a1b;
     text-transform: capitalize;
 }
 
-nav #Nav-links ul {
+/* here i style company logo heading*/
+nav #Nav-links .Nav-List {
     display: flex;
     align-items: center;
     gap: 40px;
 }
 
-nav #Nav-links ul li a {
+/* here i style company logo heading*/
+nav #Nav-links .Nav-List li a {
+    white-space: nowrap;
     font-size: 20px;
     transition: all 0.2s ease-in-out;
 
 }
 
-
-nav #Nav-links ul li .indicat-active {
+/* here i style company logo heading*/
+nav #Nav-links .Nav-List li .indicat-active {
     border-top: 3px solid #d85a1b;
     margin-bottom: 9px;
     color: #d85a1b;
 }
 
-nav #Nav-links ul li .inidicator-anchor-permanent {
+nav #Nav-links .Nav-List li .inidicator-anchor-permanent {
     color: #d85a1b;
 }
 
-nav #Nav-links ul li .indicator {
+nav #Nav-links .Nav-List li .indicator {
     border-top: 3px solid transparent;
     margin-bottom: 9px;
     transition: all 0.2s ease-in-out;
 }
 
-nav #Nav-links ul li:hover .indicator {
+nav #Nav-links .Nav-List li:hover .indicator {
     border-top: 3px solid #d85a1b;
 }
 
-nav #Nav-links ul li .inidicator-anchor:hover {
+nav #Nav-links .Nav-List li .inidicator-anchor:hover {
     color: #d85a1b;
 
 }
 
-/* pesudo Elements */
-/* #Company-Logo p span::before {
-    content: "1";
-    width: 30px;
-    height: 30px;
-    display: inline-block;
-    text-align: center;
-    margin-right: 8px;
-    font-size: 30px;
-    border: 2px solid transparent;
-    background-color: rgba(105, 102, 102, 0.381);
-    border-radius: 30px;
-    padding: 3px 4px;
-    transition: all 0.4s ease-in-out;
-} */
+.menu-icon {
+    width: 40px;
+    display: none;
+}
+
+.menu-icon img {
+    width: 100%;
+}
+
+/* styling menu */
+nav #Nav-links .Services-Menu {
+    position: relative;
+}
+
+#Nav-links .Services-Menu .Sub-ServicesMenu {
+    position: absolute;
+    display: none;
+    background-color: #9f3e0e;
+    border-radius: 10px;
+    overflow: hidden;
+    left: -4px
+}
+
+#Nav-links .Services-Menu .Sub-ServicesMenu li {
+    padding-inline: 30px;
+    font-size: 25px;
+}
+
+#Nav-links .Services-Menu .Sub-ServicesMenu li:hover {
+    background-color: #eb7337;
+}
+
+#Nav-links .Services-Menu:hover .Sub-ServicesMenu {
+    display: block;
+}
+
+
+
+
+/* Rersponsive */
+
+@media (max-width:1080px) {
+
+    nav #Nav-links {
+        display: none;
+    }
+
+    .menu-icon {
+        width: 40px;
+        display: block;
+        cursor: pointer;
+    }
+
+}
+
+
+@media (max-width:640px) {
+
+    /* styling nav element */
+    Nav {
+        padding-inline: 10px;
+    }
+
+    /* menu bar and nevigation */
+    nav #Nav-links {
+        display: none;
+    }
+
+    /* hamburger menu */
+    .menu-icon {
+        width: 30px;
+        display: block;
+        cursor: pointer;
+    }
+
+    /* company logo and contact number */
+    nav #Company-Logo h1 {
+        font-size: 30px;
+    }
+
+    nav #Company-Logo p {
+        display: none;
+    }
+
+
+}
