@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Oleo+Script:wght@400;700&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 /* step -1  always*/
 * {
     margin: 0;
@@ -149,6 +151,157 @@ nav #Nav-links .Services-Menu {
 #Nav-links .Services-Menu:hover .Sub-ServicesMenu {
     display: block;
 }
+
+/* hero section */
+#Hero-Section {
+    position: relative;
+    width: 100%;
+    max-width: 1280px;
+    margin-inline: auto;
+    margin-top: 90px;
+    font-family: "Philosopher", sans-serif;
+    color: #e5f0f5;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+#Hero-Section .hero-image {
+    width: 100%;
+    max-width: 300px;
+    position: relative;
+}
+
+#Hero-Section .hero-image .hover-images {
+    width: 100%;
+    max-width: 300px;
+    position: absolute;
+    right: 0;
+    border: 5px solid white;
+    border-radius: 10px;
+}
+
+#Hero-Section .hero-image .hero-image-first {
+    top: 0;
+    left: -150px;
+    transition: all 0.6s ease-in-out;
+}
+
+/* first image hover effect */
+#Hero-Section .hero-image .hero-image-first:hover {
+    transform: scale(1.1);
+    z-index: 1
+}
+
+#Hero-Section .hero-image .hero-image-second {
+    top: 70px;
+    left: 0px;
+    transition: all 0.6s ease-in-out;
+}
+
+/* second image hover effect */
+#Hero-Section .hero-image .hero-image-second:hover {
+    transform: scale(1.1);
+    z-index: 1
+}
+
+#Hero-Section .hero-image .hero-image-third {
+    top: 190px;
+    left: -80px;
+    transition: all 0.6s ease-in-out;
+}
+
+/* first image hover effect */
+#Hero-Section .hero-image .hero-image-third:hover {
+    transform: scale(1.1);
+    z-index: 1
+}
+
+/* hover effect on images */
+
+.showpage-1 {
+    display: none;
+}
+
+.showpage-2 {
+    display: none;
+}
+
+.showpage-3 {
+    display: block;
+}
+
+#Hero-Section .hero-image .hero-image-first:hover~div .showpage-1 {
+    display: block;
+    background-color: red;
+}
+
+#Hero-Section .hero-image .hero-image-first:hover~.showpage-3 {
+    display: none;
+}
+
+
+
+
+
+/* text style */
+.hero-text {
+    position: absolute;
+    left: 0;
+}
+
+.hero-text .hero-subchild {}
+
+
+.hero-text .hero-para-first {
+    font-size: 30px;
+    color: #d85a1b;
+}
+
+.hero-text .main-hero-font {
+    font-size: 42px;
+    line-height: 62px;
+}
+
+.hero-text .hero-para-second {
+    width: 100%;
+    max-width: 60%;
+    margin-top: 20px;
+    font-size: 17px;
+}
+
+.hero-text button {
+    margin-top: 20px;
+    padding: 10px 30px;
+    background-color: #d85a1b;
+    font-size: 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
