@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: #02162e;
+    background-color: #031d2e;
     color: white;
 }
 
@@ -31,7 +31,7 @@ a {
 /* here i style nav element */
 Nav {
     padding-inline: 30px;
-    background-color: #061f3e;
+    background-color: #0c2d43;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -154,131 +154,480 @@ nav #Nav-links .Services-Menu {
 
 /* hero section */
 #Hero-Section {
-    position: relative;
     width: 100%;
     max-width: 1280px;
     margin-inline: auto;
-    margin-top: 90px;
-    font-family: "Philosopher", sans-serif;
-    color: #e5f0f5;
     display: flex;
-    flex-direction: row-reverse;
     justify-content: space-between;
-    gap: 30px;
+    flex-direction: row-reverse;
+    margin-top: 50px;
+    padding-inline: 30px;
+    font-family: "Philosopher";
 }
 
-#Hero-Section .hero-image {
-    width: 100%;
-    max-width: 300px;
+#Hero-Section .hero-image-Text {
     position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    top: 30px;
 }
 
-#Hero-Section .hero-image .hover-images {
-    width: 100%;
-    max-width: 300px;
+#Hero-Section .hero-image-Text .hover-images {
+    width: 300px;
+    border: 5px solid rgb(248, 248, 248);
+    border-radius: 10px;
     position: absolute;
     right: 0;
-    border: 5px solid white;
-    border-radius: 10px;
+    transition: all 0.4s ease-in-out;
+
 }
 
-#Hero-Section .hero-image .hero-image-first {
-    top: 0;
-    left: -150px;
-    transition: all 0.6s ease-in-out;
-}
-
-/* first image hover effect */
-#Hero-Section .hero-image .hero-image-first:hover {
-    transform: scale(1.1);
-    z-index: 1
-}
-
-#Hero-Section .hero-image .hero-image-second {
-    top: 70px;
-    left: 0px;
-    transition: all 0.6s ease-in-out;
-}
-
-/* second image hover effect */
-#Hero-Section .hero-image .hero-image-second:hover {
-    transform: scale(1.1);
-    z-index: 1
-}
-
-#Hero-Section .hero-image .hero-image-third {
-    top: 190px;
-    left: -80px;
-    transition: all 0.6s ease-in-out;
-}
-
-/* first image hover effect */
-#Hero-Section .hero-image .hero-image-third:hover {
-    transform: scale(1.1);
-    z-index: 1
-}
-
-/* hover effect on images */
-
-.showpage-1 {
-    display: none;
-}
-
-.showpage-2 {
-    display: none;
-}
-
-.showpage-3 {
-    display: block;
-}
-
-#Hero-Section .hero-image .hero-image-first:hover~div .showpage-1 {
-    display: block;
-    background-color: red;
-}
-
-#Hero-Section .hero-image .hero-image-first:hover~.showpage-3 {
-    display: none;
-}
-
-
-
-
-
-/* text style */
-.hero-text {
+#Hero-Section .hero-image-Text .hero-image-first {
     position: absolute;
-    left: 0;
+    top: 0;
+    right: 180px;
 }
 
-.hero-text .hero-subchild {}
+#Hero-Section .hero-image-Text .hero-image-second {
+    position: absolute;
+    top: 50px;
+    right: -20px;
+}
+
+#Hero-Section .hero-image-Text .hero-image-third {
+    position: absolute;
+    right: 80px;
+    top: 170px;
+}
+
+.Text-Sibling {
+    position: relative;
+    width: 45%;
+    background-color: #588ed0;
+}
+
+.Text-Sibling .h1 {
+    position: absolute;
+}
+
+.Text-Sibling .h2 {
+    position: absolute;
+    display: none;
+}
+
+.Text-Sibling .h3 {
+    position: absolute;
+    display: none;
+}
 
 
-.hero-text .hero-para-first {
-    font-size: 30px;
+
+/* hover effect */
+
+
+#Hero-Section .hero-image-Text .hero-image-first:hover {
+    transform: scale(1.1);
+}
+
+
+#Hero-Section .hero-image-Text .hero-image-second:hover {
+    transform: scale(1.1);
+}
+
+
+#Hero-Section .hero-image-Text .hero-image-third:hover {
+    transform: scale(1.1);
+}
+
+
+
+/* hover effect and show images */
+
+
+#Hero-Section .hero-image-Text .hero-image-first:hover~.Text-Sibling .h1 {
+    display: block;
+}
+
+
+#Hero-Section .hero-image-Text .hero-image-second:hover~.Text-Sibling .h2 {
+    display: block;
+}
+
+#Hero-Section .hero-image-Text .hero-image-second:hover~.Text-Sibling .h1 {
+    display: none;
+}
+
+
+#Hero-Section .hero-image-Text .hero-image-third:hover~.Text-Sibling .h3 {
+    display: block;
+}
+
+#Hero-Section .hero-image-Text .hero-image-third:hover~.Text-Sibling .h1 {
+    display: none;
+}
+
+/* text editing */
+
+.hero-para-first {
+    font-size: 26px;
+    margin-bottom: 15px;
     color: #d85a1b;
 }
 
-.hero-text .main-hero-font {
+.main-hero-font {
     font-size: 42px;
-    line-height: 62px;
+    margin-bottom: 10px;
 }
 
-.hero-text .hero-para-second {
-    width: 100%;
-    max-width: 60%;
-    margin-top: 20px;
-    font-size: 17px;
+.hero-para-second {
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 20px;
+
 }
 
-.hero-text button {
-    margin-top: 20px;
-    padding: 10px 30px;
-    background-color: #d85a1b;
-    font-size: 20px;
-    border: 2px solid white;
-    border-radius: 10px;
+
+/* editing button */
+.Text-Sibling .hex-button {
+    background-color: #f97316;
     color: white;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 50px;
+    width: 250px;
+    height: 50px;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    margin-top: 30px;
+}
+
+/* Add hexagon effect using pseudo-elements */
+.Text-Sibling .hex-button:before,
+.Text-Sibling .hex-button:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+/* Left triangle */
+.Text-Sibling .hex-button:before {
+    left: -20px;
+    border-width: 25px 20px 25px 0;
+    border-color: transparent #f97316 transparent transparent;
+}
+
+/* Right triangle */
+.Text-Sibling .hex-button:after {
+    right: -20px;
+    border-width: 25px 0 25px 20px;
+    border-color: transparent transparent transparent #f97316;
+}
+
+/* Hover effect */
+.Text-Sibling .hex-button:hover {
+    background-color: #ff8c2e;
+    /* Slightly lighter orange */
+    cursor: pointer;
+}
+
+.Text-Sibling .hex-button:hover::before {
+    border-color: transparent #ff8c2e transparent transparent;
+}
+
+.Text-Sibling .hex-button:hover::after {
+    border-color: transparent transparent transparent #ff8c2e;
+}
+
+/* book an event section */
+
+section #BookEvent {
+    width: 100%;
+    max-width: 1280px;
+    margin-top: 400px;
+    margin-inline: auto;
+    font-family: "Philosopher";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 30px;
+}
+
+#BookEvent .Book-event-Heading {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#BookEvent .Book-event-Heading h1 {
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.Book-event-Heading .break-underline {
+    border-bottom: 5px solid #d85a1b;
+    width: 100px;
+    margin-inline: auto;
+    margin-block: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.Book-event-Heading .break-underline:hover {
+    width: 200px;
+}
+
+.Book-event-Heading P {
+    font-size: 18px;
+    width: 70%;
+    text-align: center;
+}
+
+
+/* form section */
+.sub-Event {
+    width: 100%;
+}
+
+.Form-Container {
+    width: 100%;
+    background-color: #0c2d43;
+    /* Slightly lighter dark blue */
+    padding: 20px 30px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+/* Label Styles */
+label {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Input, Select Fields */
+.input-box {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+input,
+select {
+    width: 100%;
+    background-color: #17384e;
+    color: #7ba2b8;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 14px;
+}
+
+input::placeholder {
+    color: #7ba2b8;
+}
+
+
+/* Hexagonal Button */
+.hex-button {
+    background-color: #f97316;
+    /* Orange color */
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    width: 150px;
+    /* Set button width */
+    height: 40px;
+    /* Set button height */
+    border: none;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    margin-top: 28px;
+}
+
+/* Hexagonal Shape with Pseudo-elements */
+.hex-button::before,
+.hex-button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.hex-button::before {
+    left: -15px;
+    border-width: 20px 15px 20px 0;
+    border-color: transparent #f97316 transparent transparent;
+}
+
+.hex-button::after {
+    right: -14px;
+    border-width: 20px 0 20px 15px;
+    border-color: transparent transparent transparent #f97316;
+}
+
+/* Hover Effect */
+.hex-button:hover {
+    background-color: #ff8c2e;
+    /* Lighter orange */
+}
+
+.hex-button:hover::before {
+    border-color: transparent #ff8c2e transparent transparent;
+}
+
+.hex-button:hover::after {
+    border-color: transparent transparent transparent #ff8c2e;
+}
+
+/* popular event section */
+
+.popular-Section {
+    width: 100%;
+    max-width: 1280px;
+    margin-inline: auto;
+    margin-top: 50px;
+    font-family: "Philosopher";
+    padding-inline: 30px;
+
+}
+
+.Book-event-Heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0 50px 0;
+}
+
+.popular-Section #parent {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+/* Card container */
+#parent .card {
+    width: 250px;
+    padding: 30px 20px;
+    background-color: #0c2d43;
+    color: #ffffff;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.395);
+}
+
+/* Circle Wrapper with Rotating Border */
+.card .circle-wrapper {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 15px;
+    position: relative;
+}
+
+.popular-card-border {
+    border: 2px solid #f97316;
+    width: 100px;
+    margin-inline: auto;
+    margin-block: 20px;
+}
+
+/* Rotating Dashed Border */
+.circle-border {
+    width: 100%;
+    height: 100%;
+
+    border: 3px dashed #f97316;
+    /* Dashed orange border */
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: none;
+    /* Disabled by default */
+}
+
+/* Fixed Circle Content (Image/Icon) */
+.circle-content {
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    background-color: #f97316;
+    /* Solid orange background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    z-index: 2;
+    /* Content stays above the border */
+}
+
+/* Card hover effect - Rotating border only */
+.card:hover .circle-border {
+    animation: rotateBorder 13s linear infinite;
+    /* Infinite rotation */
+}
+
+/* Text styling */
+.title {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 0.9rem;
+    margin: 10px 0 20px;
+}
+
+.read-more {
+    color: #f97316;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Keyframes for rotating border */
+@keyframes rotateBorder {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 
@@ -288,16 +637,231 @@ nav #Nav-links .Services-Menu {
 
 
 
+/* Section Styling */
+
+.Choose-Us {
+    width: 100%;
+    max-width: 1280px;
+    margin: auto;
+    margin-top: 150px;
+}
+
+.section {
+    width: 100%;
+    display: flex;
+    margin-inline: auto;
+    gap: 30px;
+}
+
+.content {
+    flex: 1;
+    margin-right: 40px;
+}
+
+.content h1 {
+    font-size: 2.5rem;
+    margin: 0 0 10px;
+}
+
+.content p {
+    line-height: 1.5;
+    margin: 10px 0;
+    color: #c8d6e5;
+}
+
+.content hr {
+    border: none;
+    height: 3px;
+    background-color: #f97316;
+    width: 60px;
+    margin: 10px 0;
+}
+
+/* Card Container */
+.cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    flex: 2;
+}
+
+/* Circular Card Styling */
+.circle-card {
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.circle {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.3s ease;
+}
+
+/* Rotating Highlights */
+.circle::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    border-top-color: #f97316;
+    border-bottom-color: #f97316;
+    animation: rotate 6s linear infinite;
+}
+
+.circle::after {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    border: 2px dashed #f97316;
+    border-radius: 50%;
+}
+
+.circle span {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+/* Card Title Styling */
+.circle-card h3 {
+    margin-top: 40px;
+    font-size: 1.4rem;
+    font-weight: normal;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+/* Hover Effect */
+.circle-card:hover .circle::before {
+    animation-play-state: paused;
+    /* Pause the animation */
+}
+
+.circle-card:hover .circle span,
+.circle-card:hover h3 {
+    color: #f97316;
+    /* Change font color to orange */
+}
+
+/* Keyframes for Rotation */
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
 
 
 
+/* testomonial */
+.testimonials-section{
+    width: 100%;
+    background-color:#0a203a;
+    margin-inline: auto;
+    margin-top: 130px;
+    padding-block: 40px;
+}
 
 
+ .section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
 
+.section-header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
 
+.section-header .break-underline-line{
+    border-bottom: 3px solid #f97316;
+    width: 100px;
+    margin-inline: auto;
+    margin-top: 30px;
+    /* margin-block:30px; */
+}
 
+/* Testimonials Container */
+.testimonials {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
 
+/* Testimonial Card */
+.testimonial-card {
+    background-color: #0d3a4d;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
 
+/* Circular Image */
+.testimonial-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 4px solid #082a3d;
+}
+
+/* Quote Icon */
+.quote-icon {
+    position: absolute;
+    top: 45px;
+    right: 35%;
+    width: 25px;
+    height: 25px;
+    background-color: #f97316;
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Testimonial Content */
+.testimonial-content {
+    margin-top: 40px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Customer Name */
+.testimonial-name {
+    margin-top: 15px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #e5e5e5;
+}
 
 
 

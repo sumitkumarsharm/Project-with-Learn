@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navbar</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ed70863ff9.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -61,87 +62,368 @@
         <!-- here i start main section -->
         <main>
             <!-- hero Section -->
+
             <section id="Hero-Section">
 
-                <div class="hero-image">
+                <div class="hero-image-Text">
                     <img class="hero-image-first hover-images" src="Assets/Assets/Food.jpeg" alt="">
 
                     <img class="hero-image-second hover-images" src="Assets/Assets/mantra.jpg" alt="">
 
                     <img class="hero-image-third hover-images" src="Assets/Assets/fire.jpg" alt="">
+
+
+
+                    <div class="Text-Sibling">
+                        <div class="h1">
+                            <p class="hero-para-first">What’s your Event?
+                            </p>
+                            <p class="main-hero-font">Book your Cook Today</p>
+
+                            <p class="hero-para-second">No event is complete without food offerings to the divine, and
+                                prasadam to the guests.
+                            </p>
+
+                            <p class="hero-para-second">Get healthy, hygienic, and scrumptious traditional meals
+                                prepared at your place or catered to your doorstep.</p>
+                            <button class="hex-button">Book Appointment</button>
+                        </div>
+                        <div class="h2">
+                            <p class="hero-para-first">What’s the Occasion?2</p>
+                            <p class="main-hero-font">Consult your Astrologer</p>
+
+                            <p class="hero-para-second">Heavenly bodies guide the universe. Doing the right thing at a
+                                right time makes a huge difference when it comes to
+                                success.</p>
+
+                            <p class="hero-para-second">Let our learned astrologers suggest auspicious dates and times,
+                                and guide you in your journey through life.
+                            </p>
+                            <button class="hex-button">Book Appointment</button>
+                        </div>
+                        <div class="h3">
+                            <p class="hero-para-first">Any occasion at home or office?</p>
+                            <p class="main-hero-font">Book your Purohit Today</p>
+
+                            <p class="hero-para-second">Seek blessing or offer thanksgiving to the divine by performing
+                                poojas and homas without any hassle.</p>
+
+                            <p class="hero-para-second ">Book the services of knowledgeable purohits online, to conduct
+                                rituals as prescribed by the vedas and scriptures.
+                            </p>
+                            <button class="hex-button">Book Appointment</button>
+                        </div>
+
+
+
+                    </div>
+
                 </div>
-
-
-               <div>
-                <div class="hero-text showpage-1">
-                    <p class="hero-para-first">What’s the Occasion?1</p>
-                    <p class="main-hero-font">Consult your Astrologer</p>
-                
-                    <p class="hero-para-second">No event is complete without food offerings to the divine, and
-                        prasadam
-                        to the guests.</p>
-                
-                    <p class="hero-para-second">Book the services of knowledgeable purohits online, to conduct
-                        rituals
-                        as prescribed by the vedas and scriptures.</p>
-                    <button class="hex-button">Book Appointment</button>
-                </div>
-                
-                
-                <!-- fsecon -->
-                <div class="hero-text showpage-2">
-                    <p class="hero-para-first">What’s the Occasion?2</p>
-                    <p class="main-hero-font">Consult your Astrologer</p>
-                
-                    <p class="hero-para-second">No event is complete without food offerings to the divine, and
-                        prasadam
-                        to the guests.</p>
-                
-                    <p class="hero-para-second">Book the services of knowledgeable purohits online, to conduct
-                        rituals
-                        as prescribed by the vedas and scriptures.</p>
-                    <button class="hex-button">Book Appointment</button>
-                </div>
-                
-                <!-- fthird -->
-                <div class="hero-text showpage-3">
-                    <p class="hero-para-first">What’s the Occasion?3</p>
-                    <p class="main-hero-font">Consult your Astrologer</p>
-                
-                    <p class="hero-para-second">No event is complete without food offerings to the divine, and
-                        prasadam
-                        to the guests.</p>
-                
-                    <p class="hero-para-second">Book the services of knowledgeable purohits online, to conduct
-                        rituals
-                        as prescribed by the vedas and scriptures.</p>
-                    <button class="hex-button">Book Appointment</button>
-                </div>
-
-               </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
             </section>
 
+
             <!-- Book an Event section -->
+            <section>
+                <div id="BookEvent">
+                    <div class="Book-event-Heading">
+                        <h1>Book an Event</h1>
+                        <div class="break-underline"></div>
+                        <p>Find professional purohits, cooks, catering service for any religious function or a
+                            traditional event
+                            at your home,
+                            office or an event venue. Select a date and event to learn more</p>
+                    </div>
+                    <div class="sub-Event">
+                        <form class="Form-Container">
+                            <div class="input-box">
+                                <label for="date">Date</label>
+                                <input type="text" id="date" placeholder="DD/MM/YYYY">
+                            </div>
+
+                            <!-- Time Input -->
+                            <div class="input-box">
+                                <label for="time">Time</label>
+                                <input type="text" id="time" placeholder="HH:MM">
+                            </div>
+
+                            <!-- Event Dropdown -->
+                            <div class="input-box">
+                                <label for="event">Event</label>
+                                <select id="event">
+                                    <option value="Aksharabhyasa">Aksharabhyasa</option>
+                                    <option value="Ganesh Puja">Ganesh Puja</option>
+                                    <option value="Wedding">Wedding</option>
+                                </select>
+                            </div>
+                            <button class="hex-button">Book Event</button>
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
             <!-- Most Popular Events section -->
+            <section class="popular-Section">
+                <div id="Popular-Event">
+                    <div class="Book-event-Heading">
+                        <h1>Most Popular Events</h1>
+                        <div class="break-underline"></div>
+                        <p>Check out the most in-demand events for your easy reference to book our services today!</p>
+                    </div>
+                </div>
+
+
+                <div id="parent">
+                    <div class="card">
+                        <!-- Circle Wrapper -->
+                        <div class="circle-wrapper">
+                            <div class="circle-border"></div> <!-- Rotating Dashed Border -->
+                            <div class="circle-content">
+                                <!-- Fixed Image/Icon -->
+
+                            </div>
+                        </div>
+                        <!-- Card Content -->
+                        <div class="title">Aksharabhyasa</div>
+                        <div class="popular-card-border"></div>
+                        <div class="description">
+                            Start your child’s formal education with goddess Saraswati’s blessings
+                        </div>
+                        <a href="#" class="read-more">READ MORE</a>
+                    </div>
+
+                    <div class="card">
+                        <!-- Circle Wrapper -->
+                        <div class="circle-wrapper">
+                            <div class="circle-border"></div> <!-- Rotating Dashed Border -->
+                            <div class="circle-content">
+                                <!-- Fixed Image/Icon -->
+                                ✍️
+                            </div>
+                        </div>
+                        <!-- Card Content -->
+                        <div class="title">Mundan</div>
+                        <div class="popular-card-border"></div>
+                        <div class="description">
+                            Cleansing your child’s soul of the past karma as it begins the journey through life
+                        </div>
+                        <a href="#" class="read-more">READ MORE</a>
+                    </div>
+
+                    <div class="card">
+                        <!-- Circle Wrapper -->
+                        <div class="circle-wrapper">
+                            <div class="circle-border"></div> <!-- Rotating Dashed Border -->
+                            <div class="circle-content">
+                                <!-- Fixed Image/Icon -->
+                                ✍️
+                            </div>
+                        </div>
+                        <!-- Card Content -->
+                        <div class="title">Namakarna
+                        </div>
+                        <div class="popular-card-border"></div>
+                        <div class="description">
+                            Give your child the name blessed by the divine, as they go ahead to forge their destiny
+                        </div>
+                        <a href="#" class="read-more">READ MORE</a>
+                    </div>
+
+                    <div class="card">
+                        <!-- Circle Wrapper -->
+                        <div class="circle-wrapper">
+                            <div class="circle-border"></div> <!-- Rotating Dashed Border -->
+                            <div class="circle-content">
+                                <!-- Fixed Image/Icon -->
+                                ✍️
+                            </div>
+                        </div>
+                        <!-- Card Content -->
+                        <div class="title">Upanayana</div>
+                        <div class="popular-card-border"></div>
+                        <div class="description">
+                            Introduce your child to spirituality and the way of life as they enter adolescence
+                        </div>
+                        <a href="#" class="read-more">READ MORE</a>
+                    </div>
+
+                    <div class="card">
+                        <!-- Circle Wrapper -->
+                        <div class="circle-wrapper">
+                            <div class="circle-border"></div> <!-- Rotating Dashed Border -->
+                            <div class="circle-content">
+                                <!-- Fixed Image/Icon -->
+                                ✍️
+                            </div>
+                        </div>
+                        <!-- Card Content -->
+                        <div class="title">Engagement</div>
+                        <div class="popular-card-border"></div>
+                        <div class="description">
+                            Enable the bride’s and the groom’s consensual commitment to marriage under the guidance of
+                            well-versed purohits
+                        </div>
+                        <a href="#" class="read-more">READ MORE</a>
+                    </div>
+
+
+                    <div class="card">
+                        <!-- Circle Wrapper -->
+                        <div class="circle-wrapper">
+                            <div class="circle-border"></div> <!-- Rotating Dashed Border -->
+                            <div class="circle-content">
+                                <!-- Fixed Image/Icon -->
+                                ✍️
+                            </div>
+                        </div>
+                        <!-- Card Content -->
+                        <div class="title">Wedding</div>
+                        <div class="popular-card-border"></div>
+                        <div class="description">
+                            Perform the wedding of your dear ones with all the key vedic rituals by experienced purohits
+                        </div>
+                        <a href="#" class="read-more">READ MORE</a>
+                    </div>
+
+
+
+                    <div class="card">
+                        <!-- Circle Wrapper -->
+                        <div class="circle-wrapper">
+                            <div class="circle-border"></div> <!-- Rotating Dashed Border -->
+                            <div class="circle-content">
+                                <!-- Fixed Image/Icon -->
+                                ✍️
+                            </div>
+                        </div>
+                        <!-- Card Content -->
+                        <div class="title">Shashtipoorthi</div>
+                        <div class="popular-card-border"></div>
+                        <div class="description">
+                            Mark the completion of 60 fruitful years by renewing marriage vows along with divine
+                            blessings of a healthy, long life.
+                        </div>
+                        <a href="#" class="read-more">READ MORE</a>
+                    </div>
+
+
+                    <div class="card">
+                        <!-- Circle Wrapper -->
+                        <div class="circle-wrapper">
+                            <div class="circle-border"></div> <!-- Rotating Dashed Border -->
+                            <div class="circle-content">
+                                <!-- Fixed Image/Icon -->
+                                ✍️
+                            </div>
+                        </div>
+                        <!-- Card Content -->
+                        <div class="title">Bhimaratha Shanti</div>
+                        <div class="popular-card-border"></div>
+                        <div class="description">
+                            Celebrate the 70th birthday while seeking the blessings of health, happiness and long life
+
+                        </div>
+                        <a href="#" class="read-more">READ MORE</a>
+                    </div>
+
+
+                </div>
+            </section>
             <!-- Why Choose Us section -->
+            <section class="Choose-Us">
+                <div class="section">
+                    <!-- Left Content -->
+                    <div class="content">
+                        <h1>Why Choose Us</h1>
+                        <hr>
+                        <p>
+                            Access our extensive network of scholarly purohits, experienced astrologers,
+                            qualified cooks and vendors to meet all your pooja related needs in one place.
+                        </p>
+                    </div>
+
+                    <!-- Right Circular Cards -->
+                    <div class="cards">
+                        <!-- Card 1 -->
+                        <div class="circle-card">
+                            <div class="circle">
+                                <span>45+</span>
+                            </div>
+                            <h3>Qualified Purohits</h3>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="circle-card">
+                            <div class="circle">
+                                <span>20+</span>
+                            </div>
+                            <h3>Qualified Cooks</h3>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="circle-card">
+                            <div class="circle">
+                                <span>45+</span>
+                            </div>
+                            <h3>Qualified Astrologers</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <!-- What Our Customers Say section -->
+            <!-- testimonials -->
+            <section class="testimonials-section">
+
+                <div class="section-header">
+                    <h1>What Our Customers Say</h1>
+                    <div class="break-underline-line"></div>
+                </div>
+
+                <!-- Testimonials Container -->
+                <div class="testimonials">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-card">
+                        <img src="https://via.placeholder.com/80" alt="Customer 1">
+                        
+                        <div class="testimonial-content">
+                            We engaged purohits for my 11th day karma of my deceased mother on 16th November 21, the
+                            function was
+                            well arranged in total, by two pandits with reasonable cost. I am satisfied 🙏.
+                        </div>
+                        <div class="testimonial-name">Sumit Sharma</div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-card">
+                        <img src="https://via.placeholder.com/80" alt="Customer 2">
+                        
+                        <div class="testimonial-content">
+                            We liked your professionalism, you were on time with regard to the response. Thank you for
+                            arranging so
+                            nicely for us. The event turned out to be awesome than expected. Thank you very much.
+                        </div>
+                        <div class="testimonial-name">Naman sharma</div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-card">
+                        <img src="https://via.placeholder.com/80" alt="Customer 3">
+                       
+                        <div class="testimonial-content">
+                            We are very happy with the outcome of your services, you are very patient and I’m convinced
+                            we
+                            can
+                            definitely leave our worries to you. I will recommend to my family and friends. Thank you!
+                        </div>
+                        <div class="testimonial-name">Ajay Gour</div>
+                    </div>
+                </div>
+            </section>
             <!-- Recent Events section-->
 
         </main>
